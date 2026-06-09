@@ -1,0 +1,48 @@
+# Private media and generated artifacts
+*.mov
+*.mp4
+*.m4v
+*.avi
+*.mkv
+*.webm
+*.heic
+*.heif
+
+# Raw or generated report assets that may contain real users
+**/assets/**/raw*
+**/assets/**/source*
+**/assets/**/frames*
+**/assets/**/keyframes*
+**/assets/**/*.jpg
+**/assets/**/*.jpeg
+**/assets/**/*.png
+**/assets/**/*.webp
+!xiaoyu-coach/assets/html_report_template.html
+
+# Local secrets and environment
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.*
+
+# Python / tooling
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local generated reports
+reports/
+output/
+dist/
+build/
