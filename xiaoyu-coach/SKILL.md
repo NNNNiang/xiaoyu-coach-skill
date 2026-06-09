@@ -16,7 +16,7 @@ Use this skill to turn workout videos, training notes, and historical reports in
 2. Establish data boundaries before reading files:
    - Main user, named member, and anonymous internet-user records must stay separate.
    - Never copy one person's technical faults into another person's report.
-   - Do not include real user videos or private memories in public examples.
+   - Do not include unapproved user videos, private media, or private memories in public examples.
 3. Collect context:
    - Read filenames, nearby notes, body data, training order, and prior same-body-part reports.
    - Treat the video order as the training order unless the user says otherwise.

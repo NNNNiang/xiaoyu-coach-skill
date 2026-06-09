@@ -7,6 +7,8 @@
 *.webm
 *.heic
 *.heif
+!examples/**/*.mp4
+!examples/**/*.jpg
 
 # Raw or generated report assets that may contain real users
 **/assets/**/raw*

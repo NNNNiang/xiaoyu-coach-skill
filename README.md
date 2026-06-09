@@ -49,6 +49,24 @@ Then ask Codex:
 Use $xiaoyu-coach to analyze this workout video folder and generate HTML plus Markdown reports.
 ```
 
+## Quick Test Example
+
+This repo includes a small public sample clip in `examples/bench-press-front-oblique/`.
+
+Sample details:
+
+- exercise: barbell bench press
+- duration: about 15.77 seconds
+- format: compressed vertical MP4, muted, metadata stripped
+- filming angle: front-oblique / foot-end diagonal
+- purpose: quick single-exercise report testing and filming-angle demonstration
+
+After installing the skill, try:
+
+```text
+Use $xiaoyu-coach to analyze examples/bench-press-front-oblique as a single-exercise assessment. Generate an HTML movement assessment and include filming-angle feedback.
+```
+
 ## Public Scope
 
 This repository intentionally includes the reusable skeleton:
@@ -59,10 +77,11 @@ This repository intentionally includes the reusable skeleton:
 - public workflow references
 - generic HTML template
 - report validation script
+- explicitly approved, compressed, metadata-stripped public sample clips
 
 It intentionally excludes:
 
-- real user videos
+- unapproved or private user videos
 - private training memories
 - private reports
 - full commercial prompts
@@ -82,4 +101,4 @@ The validator checks required sections, local image paths, and internal terms th
 
 ## Release Notes
 
-This is an experimental public skill skeleton. Before publishing a public release, choose a license, audit examples for privacy, and make sure all sample data is synthetic or explicitly approved for release.
+This is an experimental public skill skeleton. Before publishing a public release, choose a license, audit examples for privacy, and make sure all sample data is synthetic or explicitly approved, compressed, muted, and metadata-stripped.
