@@ -21,6 +21,11 @@ Core outputs:
 xiaoyu-coach-skill/
 ├── README.md
 ├── .gitignore
+├── examples/
+│   ├── barbell-squat-50kg-side-rear/
+│   ├── bench-press-front-oblique/
+│   ├── dumbbell-rdl-side/
+│   └── open-elbow-row-front-oblique/
 └── xiaoyu-coach/
     ├── SKILL.md
     ├── agents/openai.yaml
@@ -49,23 +54,26 @@ Then ask Codex:
 Use $xiaoyu-coach to analyze this workout video folder and generate HTML plus Markdown reports.
 ```
 
-## Quick Test Example
+## Quick Test Examples
 
-This repo includes a small public sample clip in `examples/bench-press-front-oblique/`.
+This repo includes small public sample clips in `examples/`.
 
-Sample details:
+Current samples include:
 
-- exercise: barbell bench press
-- duration: about 15.77 seconds
-- format: compressed vertical MP4, muted, metadata stripped
-- filming angle: front-oblique / foot-end diagonal
-- purpose: quick single-exercise report testing and filming-angle demonstration
+- barbell bench press
+- barbell squat
+- dumbbell Romanian deadlift / soft-knee straight-leg deadlift
+- open-elbow row
 
-After installing the skill, try:
+All sample clips are compressed vertical MP4 files, muted, and stripped of phone/location metadata.
+
+After installing the skill, try one sample:
 
 ```text
 Use $xiaoyu-coach to analyze examples/bench-press-front-oblique as a single-exercise assessment. Generate an HTML movement assessment and include filming-angle feedback.
 ```
+
+See `examples/README.md` for the full sample list and prompts.
 
 ## Public Scope
 
