@@ -1,10 +1,19 @@
 # Xiaoyu Coach Skill
 
-小鱼教练是一个面向普通训练者的训练视频动作评估与训练复盘 Codex Skill。它帮助使用者基于训练视频、训练记录和历史报告，生成安全优先、教练口吻、适合手机阅读的 HTML 报告，以及更详细的 Markdown 训练日报。
+Xiaoyu Coach is a Codex Skill for training-video movement assessment and
+workout report generation. It helps turn workout videos, training notes,
+and historical reports into safety-first, coach-style HTML and Markdown
+reports.
+
+The public repository is a reusable Skill skeleton. It is designed for
+testing, contribution, and integration experiments without exposing private
+training memories, private videos, or commercial service internals.
 
 ## Positioning
 
-Xiaoyu Coach is not a replacement for a doctor, physical therapist, or in-person coach. It is a local-first workflow for reviewing gym training videos, especially for 0-3 year beginner and early-intermediate lifters.
+Xiaoyu Coach is not a replacement for a doctor, physical therapist, or
+in-person coach. It is a local-first workflow for reviewing gym training
+videos, especially for 0-3 year beginner and early-intermediate lifters.
 
 Core outputs:
 
@@ -19,25 +28,33 @@ Core outputs:
 
 ```text
 xiaoyu-coach-skill/
-├── README.md
-├── .gitignore
-├── examples/
-│   ├── barbell-squat-50kg-side-rear/
-│   ├── bench-press-front-oblique/
-│   ├── dumbbell-rdl-side/
-│   └── open-elbow-row-front-oblique/
-└── xiaoyu-coach/
-    ├── SKILL.md
-    ├── agents/openai.yaml
-    ├── assets/html_report_template.html
-    ├── references/
-    │   ├── camera-guidelines.md
-    │   ├── data-isolation.md
-    │   ├── public-scope.md
-    │   ├── report-standards.md
-    │   ├── safety-and-coaching.md
-    │   └── video-analysis-workflow.md
-    └── scripts/validate_report.py
+|- README.md
+|- LICENSE
+|- NOTICE
+|- BRAND.md
+|- THIRD_PARTY_NOTICES.md
+|- examples/
+|  |- LICENSE.md
+|  |- README.md
+|  |- golden-checklist.md
+|  |- barbell-squat-50kg-side-rear/
+|  |- bench-press-front-oblique/
+|  |- dumbbell-rdl-side/
+|  `- open-elbow-row-front-oblique/
+`- xiaoyu-coach/
+   |- SKILL.md
+   |- agents/openai.yaml
+   |- assets/html_report_template.html
+   |- references/
+   |  |- camera-guidelines.md
+   |  |- data-isolation.md
+   |  |- public-scope.md
+   |  |- report-standards.md
+   |  |- safety-and-coaching.md
+   |  `- video-analysis-workflow.md
+   `- scripts/
+      |- validate_examples.py
+      `- validate_report.py
 ```
 
 ## Install Locally
@@ -65,15 +82,19 @@ Current samples include:
 - dumbbell Romanian deadlift / soft-knee straight-leg deadlift
 - open-elbow row
 
-All sample clips are compressed vertical MP4 files, muted, and stripped of phone/location metadata.
-Each sample folder also includes:
+All sample clips are compressed vertical MP4 files, muted, and stripped of
+phone/location metadata.
 
-- `expected_findings.md`: bilingual Chinese/English expected observations and common misjudgments to avoid.
-- `expected_report.html`: bilingual Chinese/English baseline report for quick visual and structural comparison.
+Each sample folder includes:
 
-Use these files as lightweight regression targets when changing the skill.
+- `expected_findings.md`: bilingual Chinese/English expected observations
+  and common misjudgments to avoid.
+- `expected_report.html`: bilingual Chinese/English baseline report for
+  quick visual and structural comparison.
 
-After installing the skill, try one sample:
+Use these files as lightweight regression targets when changing the Skill.
+
+After installing the Skill, try one sample:
 
 ```text
 Use $xiaoyu-coach to analyze examples/bench-press-front-oblique as a single-exercise assessment. Generate an HTML movement assessment and include filming-angle feedback.
@@ -91,7 +112,7 @@ This repository intentionally includes the reusable skeleton:
 - data isolation rules
 - public workflow references
 - generic HTML template
-- report validation script
+- report validation scripts
 - explicitly approved, compressed, metadata-stripped public sample clips
 
 It intentionally excludes:
@@ -103,6 +124,26 @@ It intentionally excludes:
 - payment or production service code
 - API keys, local credentials, cookies, or tokens
 
+## License, Brand, and Examples
+
+Source code, scripts, templates, and general documentation are licensed
+under the Apache License 2.0. See `LICENSE`.
+
+Important boundaries:
+
+- `NOTICE` explains attribution and scope.
+- `BRAND.md` reserves the Xiaoyu Coach name, localized names, logos,
+  avatars, mascot artwork, and confusingly similar product identity.
+- `examples/LICENSE.md` applies extra restrictions to public example videos,
+  preview images, expected findings, and expected reports.
+- `THIRD_PARTY_NOTICES.md` records the current dependency status and the
+  production policy for analysis engines such as MediaPipe, OpenCV, MMPose,
+  FFmpeg, and OpenPose.
+
+In short: the public Skill skeleton is open source; the Xiaoyu Coach brand,
+private knowledge base, private user data, and commercial service internals
+are not.
+
 ## Report Validation
 
 After generating a report, run:
@@ -112,7 +153,8 @@ python .\xiaoyu-coach\scripts\validate_report.py path\to\report.html
 python .\xiaoyu-coach\scripts\validate_report.py path\to\report.md
 ```
 
-The validator checks required sections, local image paths, and internal terms that should not appear in final user-facing reports.
+The validator checks required sections, local image paths, and internal terms
+that should not appear in final user-facing reports.
 
 To validate the public example folder structure, run:
 
@@ -122,4 +164,6 @@ python .\xiaoyu-coach\scripts\validate_examples.py .\examples
 
 ## Release Notes
 
-This is an experimental public skill skeleton. Before publishing a public release, choose a license, audit examples for privacy, and make sure all sample data is synthetic or explicitly approved, compressed, muted, and metadata-stripped.
+This is an experimental public Skill skeleton. Before publishing a tagged
+release, audit examples for privacy, validate all golden examples, and keep
+dependency notices current.

@@ -4,6 +4,9 @@ This folder contains small public samples for quickly testing Xiaoyu Coach.
 
 The examples are intentionally short, compressed, muted, and stripped of phone metadata. Do not add private training videos here unless the person in the video has explicitly approved public release.
 
+Example videos, preview images, expected findings, and expected reports are
+test fixtures, not a free media dataset. See `LICENSE.md` before reusing them.
+
 ## Available Samples
 
 | Folder | Exercise | Video | Duration | Filming angle | Purpose |

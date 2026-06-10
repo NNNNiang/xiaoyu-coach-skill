@@ -5,6 +5,8 @@ The GitHub skill should publish the reusable skeleton, not private operating ass
 ## Include
 
 - `SKILL.md`
+- Root license and notice files
+- Brand and example-fixture license boundaries
 - Public workflow references
 - HTML and Markdown report standards
 - Safety priority rules
@@ -20,6 +22,7 @@ The GitHub skill should publish the reusable skeleton, not private operating ass
 - Unapproved or private user videos, screenshots, pose overlays, or reports
 - Private training memory
 - Full commercial prompts or closed knowledge bases
+- Brand source files, unused mascot drafts, private logo explorations, or app identity assets
 - Payment, queue, or production service implementation
 - Cost optimization internals that reveal private operating strategy
 - API keys, local absolute paths, model credentials, cookies, or tokens
@@ -33,5 +36,6 @@ Open-source the runnable skeleton. The paid product should provide convenience, 
 1. Search for local absolute paths and personal names.
 2. Search for private media extensions: `.mov`, `.mp4`, `.jpg`, `.png`; allow only synthetic assets or explicitly approved public samples.
 3. Run report and skill validation.
-4. Decide license before public release.
-5. Tag the first release as experimental, with clear non-medical and privacy notices.
+4. Confirm `LICENSE`, `NOTICE`, `BRAND.md`, `examples/LICENSE.md`, and `THIRD_PARTY_NOTICES.md` are current.
+5. Confirm no OpenPose-dependent production workflow is described as the default commercial route.
+6. Tag the first release as experimental, with clear non-medical and privacy notices.

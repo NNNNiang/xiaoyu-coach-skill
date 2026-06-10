@@ -1,0 +1,18 @@
+Xiaoyu Coach Skill
+Copyright 2026 NNNNiang and Xiaoyu Coach contributors
+
+This repository contains the public Xiaoyu Coach Skill skeleton:
+workflow instructions, report standards, reusable templates, validation
+scripts, and explicitly approved public example fixtures.
+
+The Apache License, Version 2.0 applies to source code, scripts,
+templates, and documentation in this repository unless a file or folder
+states a different license.
+
+The Apache License does not grant rights to use the Xiaoyu Coach brand,
+the Chinese names "小鱼教练" / "小yu教练", related localized names, logos,
+avatars, mascot artwork, service marks, or confusingly similar product
+identity except for truthful references to this project.
+
+Public example videos, preview images, expected findings, and expected
+reports are covered by the additional restrictions in examples/LICENSE.md.
