@@ -13,6 +13,15 @@ The examples are intentionally short, compressed, muted, and stripped of phone m
 | `dumbbell-rdl-side/` | Dumbbell Romanian deadlift / soft-knee straight-leg deadlift | `dumbbell_rdl_side_18s.mp4` | 17.47 s | Vertical phone video from a side angle | Hip hinge, back-position review, bottom-range safety, and filming-angle demonstration |
 | `open-elbow-row-front-oblique/` | Open-elbow row | `open_elbow_row_front_oblique_24s.mp4` | 23.97 s | Vertical phone video from a front-oblique angle | Row path, elbow height, trunk stability, and camera-angle demonstration |
 
+Each folder includes:
+
+- `expected_findings.md`: bilingual Chinese/English expected observations, safety priorities, filming advice, and "do not misjudge" constraints.
+- `expected_report.html`: bilingual Chinese/English baseline report for visual and structural comparison.
+
+Generated reports do not need to copy the wording, but they should preserve the coaching judgments.
+
+See `golden-checklist.md` for the regression checklist.
+
 ## Quick Test Prompt
 
 After installing the skill, ask Codex:
@@ -40,3 +49,11 @@ Expected output:
 - a concise HTML action assessment
 - comments on movement setup, path, control, and safety
 - filming-angle feedback explaining what the current angle shows well and what a better angle would reveal
+
+## Validate Example Structure
+
+From the repository root:
+
+```powershell
+python .\xiaoyu-coach\scripts\validate_examples.py .\examples
+```

@@ -66,6 +66,12 @@ Current samples include:
 - open-elbow row
 
 All sample clips are compressed vertical MP4 files, muted, and stripped of phone/location metadata.
+Each sample folder also includes:
+
+- `expected_findings.md`: bilingual Chinese/English expected observations and common misjudgments to avoid.
+- `expected_report.html`: bilingual Chinese/English baseline report for quick visual and structural comparison.
+
+Use these files as lightweight regression targets when changing the skill.
 
 After installing the skill, try one sample:
 
@@ -74,6 +80,7 @@ Use $xiaoyu-coach to analyze examples/bench-press-front-oblique as a single-exer
 ```
 
 See `examples/README.md` for the full sample list and prompts.
+See `examples/golden-checklist.md` for the regression checklist.
 
 ## Public Scope
 
@@ -106,6 +113,12 @@ python .\xiaoyu-coach\scripts\validate_report.py path\to\report.md
 ```
 
 The validator checks required sections, local image paths, and internal terms that should not appear in final user-facing reports.
+
+To validate the public example folder structure, run:
+
+```powershell
+python .\xiaoyu-coach\scripts\validate_examples.py .\examples
+```
 
 ## Release Notes
 

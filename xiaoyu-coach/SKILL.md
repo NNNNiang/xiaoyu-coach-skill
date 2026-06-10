@@ -48,6 +48,9 @@ Reusable assets and scripts:
 
 - `assets/html_report_template.html`: base structure for mobile-friendly HTML reports.
 - `scripts/validate_report.py`: checks required report sections, local image paths, and forbidden internal terms.
+- `scripts/validate_examples.py`: checks that public example folders contain videos, previews, READMEs, expected findings, and expected reports.
+
+When using public examples, read the example folder's `README.md`, `expected_findings.md`, and `expected_report.html`. Treat expected findings and baseline reports as regression targets, not as text to copy verbatim.
 
 ## Report Defaults
 
