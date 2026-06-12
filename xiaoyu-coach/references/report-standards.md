@@ -24,6 +24,14 @@ Each important movement gets one card:
 
 Do not put all images in one section and all commentary in another.
 
+Four-stage images should be easy to read on a phone:
+
+- prefer 2x2 composition for four stages
+- never make a 1x4 strip for important movement review
+- keep one row to at most three images
+- keep portrait footage portrait and landscape footage landscape
+- place each image next to the commentary for that exact movement
+
 ## Markdown Report
 
 Markdown is the detailed training-day record. Include:
@@ -55,12 +63,16 @@ Avoid internal workflow language in formal reports:
 - invalid frames
 - automatic judgment
 - model recognition error
+- pose engine
+- tracking failure
 
 Use coach-facing phrasing instead:
 
 - “这组画面主要复核整体节奏和稳定性。”
 - “关键画面显示底部深度已经足够。”
 - “本次不适合细抠角度，重点看可见的动作质量。”
+
+Also avoid writing report text that sounds like a technical lab note, for example “the pose data is invalid” or “the skeleton switched to another person.” Convert it into practical coaching language or omit it if it does not help the trainee.
 
 ## Progression Language
 

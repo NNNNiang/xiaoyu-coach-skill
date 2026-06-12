@@ -31,6 +31,13 @@ For machines:
 - joint lockout
 - excessive body swing, shrugging, leaning, or leaving the pad
 
+For cable and machine pulls, do not call every leaned-back setup “cheating.” Some machines or cable paths require a fixed preset lean so the handle clears the face or aligns with the target muscle. Judge whether the torso angle changes during the rep:
+
+- acceptable: fixed lean, stable pelvis/ribs, same angle from start to finish
+- caution: the torso keeps leaning farther back near the concentric end
+- caution: late reps show more body swing than early reps
+- caution: the chin or chest chases the handle instead of the elbows driving the movement
+
 ## Movement Notes
 
 - Squat: judge knee-hip timing, depth, torso lean, foot pressure, knee tracking, and body sway. Do not blindly cue “knees behind toes”.
@@ -40,6 +47,17 @@ For machines:
 - Pulldown/pull-up: judge shoulder depression, elbow path, torso lean, and whether the chin chases the handle.
 - Row: judge torso bracing, elbow route, scapular control, and whether momentum replaces pulling.
 - Lateral raise/fly/face pull: judge target line, top control, shrugging, and peak hold.
+
+## Exercise Ordering
+
+When planning workouts, avoid stacking two movements that heavily tax the same local target back-to-back unless the goal is a deliberate specialization or finisher. Rotate emphasis so the user can keep quality high:
+
+- shoulder day: alternate middle-delt, press, rear-delt/upper-back, and isolation work instead of putting rear-delt fly and face pull together by default
+- chest day: separate heavy presses, fly/pec-deck, and shoulder/triceps-heavy work when possible
+- back day: alternate vertical pull, row, straight-arm or rear-delt work, and lower-back/hip-hinge accessories
+- leg day: alternate quad-dominant, hip-dominant, unilateral, and hamstring/isolation work when possible
+
+If two similar movements are intentionally paired, say why and reduce load or volume expectations accordingly.
 
 ## Coaching Voice
 

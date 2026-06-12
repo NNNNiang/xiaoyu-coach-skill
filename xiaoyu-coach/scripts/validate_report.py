@@ -29,6 +29,8 @@ FORBIDDEN_TERMS = [
     "tracking pollution",
     "invalid frame",
     "model recognition error",
+    "pose engine",
+    "tracking failure",
     "骨架追踪",
     "骨骼追踪污染",
     "污染帧",
